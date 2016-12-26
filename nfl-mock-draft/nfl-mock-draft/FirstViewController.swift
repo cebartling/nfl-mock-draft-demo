@@ -7,14 +7,18 @@
 //
 
 import UIKit
+import FirebaseDatabase
 
 class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    var rootRef: FIRDatabaseReference!
     private let Array: NSArray = ["First","Second","Third"]
     private var myTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        rootRef = FIRDatabase.database().reference()
         
         let barHeight: CGFloat = UIApplication.shared.statusBarFrame.size.height
         let displayWidth: CGFloat = self.view.frame.width
