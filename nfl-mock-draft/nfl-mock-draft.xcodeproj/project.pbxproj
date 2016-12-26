@@ -18,6 +18,8 @@
 		837D62091E10C11A00284A39 /* nfl_mock_draftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837D62081E10C11A00284A39 /* nfl_mock_draftUITests.swift */; };
 		837D62171E10C46200284A39 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 837D62161E10C46200284A39 /* GoogleService-Info.plist */; };
 		837D62191E10C7B500284A39 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 837D62181E10C7B500284A39 /* Podfile */; };
+		83CDADD11E10CA42002EB7B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 837D62161E10C46200284A39 /* GoogleService-Info.plist */; };
+		83CDADD21E10CA44002EB7B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 837D62161E10C46200284A39 /* GoogleService-Info.plist */; };
 		A077349DECAC24616E1F02B9 /* Pods_nfl_mock_draft.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8D90E0E00329DA8316C38BD /* Pods_nfl_mock_draft.framework */; };
 		D59B79AD8907479AC545D4CF /* Pods_nfl_mock_draftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6394E4DD752C60AEA7DD8B3 /* Pods_nfl_mock_draftUITests.framework */; };
 /* End PBXBuildFile section */
@@ -302,6 +304,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83CDADD11E10CA42002EB7B4 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +312,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83CDADD21E10CA44002EB7B4 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -710,6 +714,7 @@
 				837D620F1E10C11A00284A39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		837D62101E10C11A00284A39 /* Build configuration list for PBXNativeTarget "nfl-mock-draftTests" */ = {
 			isa = XCConfigurationList;
@@ -718,6 +723,7 @@
 				837D62121E10C11A00284A39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		837D62131E10C11A00284A39 /* Build configuration list for PBXNativeTarget "nfl-mock-draftUITests" */ = {
 			isa = XCConfigurationList;
@@ -726,6 +732,7 @@
 				837D62151E10C11A00284A39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
