@@ -7,8 +7,11 @@
 //
 
 import UIKit
+//import FirebaseDatabase
 
 class FirstViewController: UIViewController {
+    
+//    let ref = FIRDatabase.database().reference(withPath: "mock-drafts")
 
     override func viewDidLoad() {
         super.viewDidLoad()

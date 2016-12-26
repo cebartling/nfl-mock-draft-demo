@@ -1,0 +1,20 @@
+{
+  "mock-drafts" : {
+    "ChristopherBartling" : {
+      "name" : "Foobar mock draft",
+      "round1" : "foobar"
+    },
+    "SaraBartling" : {
+      "name" : "Barfoo mock draft",
+      "round1" : "barfoo"
+    },
+    "AlyssaBartling" : {
+      "name" : "Barfoo mock draft",
+      "round1" : "barfoo"
+    },
+    "ErinBartling" : {
+      "name" : "Barfoo mock draft",
+      "round1" : "barfoo"
+    }
+  }
+}
