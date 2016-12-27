@@ -1,19 +1,19 @@
 {
   "mock-drafts" : {
-    "ChristopherBartling" : {
-      "name" : "Foobar mock draft",
+    "0" : {
+      "name" : "Christopher Bartling mock draft",
       "round1" : "foobar"
     },
-    "SaraBartling" : {
-      "name" : "Barfoo mock draft",
+    "1" : {
+      "name" : "Sara Bartling mock draft",
       "round1" : "barfoo"
     },
-    "AlyssaBartling" : {
-      "name" : "Barfoo mock draft",
+    "2" : {
+      "name" : "Alyssa Bartling mock draft",
       "round1" : "barfoo"
     },
-    "ErinBartling" : {
-      "name" : "Barfoo mock draft",
+    "3" : {
+      "name" : "Erin Bartling mock draft",
       "round1" : "barfoo"
     }
   }

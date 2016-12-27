@@ -12,13 +12,25 @@ import FirebaseDatabase
 class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var rootRef: FIRDatabaseReference!
-    private let Array: NSArray = ["First","Second","Third"]
+    private var Array: NSMutableArray = []
     private var myTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         rootRef = FIRDatabase.database().reference()
+        rootRef.child("mock-drafts").observeSingleEvent(of: .value, with: { (snapshot) in
+            let value = snapshot.value as? NSArray
+            for mockDraft in value as! [NSDictionary] {
+                let mockDraftName = mockDraft["name"] as? String ?? ""
+//                print("===> Mock draft: \(mockDraftName)\n")
+                self.Array.add(mockDraftName)
+            }
+            DispatchQueue.main.async{
+                self.myTableView.reloadData()
+            }
+        }) { (error) in
+            print(error.localizedDescription)
+        }
         
         let barHeight: CGFloat = UIApplication.shared.statusBarFrame.size.height
         let displayWidth: CGFloat = self.view.frame.width
