@@ -247,6 +247,7 @@
 		837D61DB1E10C11A00284A39 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = "";
 				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Pintail Consulting LLC";
@@ -616,6 +617,7 @@
 			baseConfigurationReference = 512C029DEA0B4E0C5F08DD32 /* Pods-nfl-mock-draft.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "iPhone Developer";
 				INFOPLIST_FILE = "nfl-mock-draft/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pintailconsultingllc.nfl-mock-draft";
@@ -629,6 +631,7 @@
 			baseConfigurationReference = 7BD9D8EA275130A1284CC13E /* Pods-nfl-mock-draft.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "iPhone Developer";
 				INFOPLIST_FILE = "nfl-mock-draft/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pintailconsultingllc.nfl-mock-draft";

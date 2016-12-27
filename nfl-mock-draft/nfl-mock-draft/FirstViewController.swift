@@ -22,10 +22,9 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
             let value = snapshot.value as? NSArray
             for mockDraft in value as! [NSDictionary] {
                 let mockDraftName = mockDraft["name"] as? String ?? ""
-//                print("===> Mock draft: \(mockDraftName)\n")
                 self.Array.add(mockDraftName)
             }
-            DispatchQueue.main.async{
+            DispatchQueue.main.async {
                 self.myTableView.reloadData()
             }
         }) { (error) in
