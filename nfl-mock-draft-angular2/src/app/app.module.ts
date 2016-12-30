@@ -3,7 +3,9 @@ import {NgModule} from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
 import {AppComponent} from './app.component';
-import { AngularFireModule } from 'angularfire2';
+import {AngularFireModule} from 'angularfire2';
+
+import {MockDraftsListModule} from './mockDraftsList/mockDraftsList.module'
 
 export const firebaseConfig = {
     apiKey: "AIzaSyARFUq6069wW_8VHGryWuVxOMqfsETMGw4",
@@ -21,7 +23,8 @@ export const firebaseConfig = {
         BrowserModule,
         FormsModule,
         HttpModule,
-        AngularFireModule.initializeApp(firebaseConfig)
+        AngularFireModule.initializeApp(firebaseConfig),
+        MockDraftsListModule
     ],
     providers: [],
     bootstrap: [AppComponent]
