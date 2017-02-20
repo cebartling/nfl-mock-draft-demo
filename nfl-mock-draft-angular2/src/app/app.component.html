@@ -1,5 +1,9 @@
 <div>
     <md-toolbar color="primary">
+        <button md-icon-button (click)="sidenav.open()">
+            <md-icon>menu</md-icon>
+        </button>
+
         <span>NFL Mock Draft</span>
 
         <!-- This fills the remaining space of the current row -->
@@ -17,12 +21,6 @@
             {{title}}
         </h1>
 
-        <div class="example-sidenav-content">
-            <button md-button (click)="sidenav.open()">
-                Open sidenav
-            </button>
-        </div>
-
         <ul>
             <li class="text" *ngFor="let item of items | async">
                 {{item.name}}
@@ -32,10 +30,5 @@
 
     <md-toolbar>
         <span>&copy; Pintail Consulting LLC 2017</span>
-
-        <!-- This fills the remaining space of the current row -->
-        <span class="example-fill-remaining-space"></span>
-
-        <span>Right Aligned Text</span>
     </md-toolbar>
 </div>
