@@ -1,7 +1,7 @@
 .example-container {
-    width: 500px;
-    height: 300px;
-    border: 1px solid rgba(105, 105, 105, 0.36);
+    width: 100vw;
+    height: 100vh;
+    border: 1px solid rgba(4, 117, 15, 0.36);
 }
 
 .example-sidenav-content {
@@ -13,4 +13,10 @@
 
 .example-sidenav {
     padding: 20px;
+}
+
+.example-fill-remaining-space {
+    /* This fills the remaining space, by using flexbox.*/
+    /* Every toolbar row uses a flexbox row layout.*/
+    flex: 1 1 auto;
 }
