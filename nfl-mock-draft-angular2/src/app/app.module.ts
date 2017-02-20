@@ -6,6 +6,8 @@ import {AppComponent} from './app.component';
 import {AngularFireModule} from 'angularfire2';
 
 import {MockDraftsListModule} from './mockDraftsList/mockDraftsList.module'
+import {MaterialModule} from '@angular/material';
+import 'hammerjs';
 
 export const firebaseConfig = {
     apiKey: "AIzaSyARFUq6069wW_8VHGryWuVxOMqfsETMGw4",
@@ -24,6 +26,7 @@ export const firebaseConfig = {
         FormsModule,
         HttpModule,
         AngularFireModule.initializeApp(firebaseConfig),
+        MaterialModule,
         MockDraftsListModule
     ],
     providers: [],

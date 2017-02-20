@@ -10,7 +10,7 @@ export class MockDraftsList {
     title = 'Mock Drafts';
     items: FirebaseListObservable<any[]>;
 
-    constructor(af: AngularFire) {
-        this.items = af.database.list('/mock-drafts');
+    constructor(angularFire: AngularFire) {
+        this.items = angularFire.database.list('/mock-drafts');
     }
 }
